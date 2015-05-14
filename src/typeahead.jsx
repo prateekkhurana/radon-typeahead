@@ -45,7 +45,7 @@ var classBase = React.createClass({
     });
   },
   onChange (ev) {
-    var val = ev.target.value;
+    var val = event.target.value;
     var state = {
       list: [],
       listOpen: false,
