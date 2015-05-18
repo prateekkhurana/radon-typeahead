@@ -46,8 +46,13 @@ var classBase = React.createClass({
   },
   onChange (ev) {
     var val = event.target.value;
-    console.log(event.target.value);
-    console.log(ev.target.value);
+    console.log("Event value by event object : " + event.target.value);
+    if (ev !== null && ev.target !== null) {
+      console.log("Event value by ev object : " + ev.target.value);
+      console.log("Ev object" + ev);
+    } else {
+      console.log("Ev object" + ev);
+    }
     var state = {
       list: [],
       listOpen: false,
